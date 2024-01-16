@@ -1,6 +1,6 @@
+package tareas;
 import java.util.Scanner;
-
-    public class L02 {
+    public class T02Operaciones {
 
         public static void main(String[] args){
             int num1, num2, resultado;
@@ -14,16 +14,20 @@ import java.util.Scanner;
             System.out.print("Ingrese numero 2: ");
             num2 = scanner.nextInt();
 
-            //Suma
+            // Suma
             resultado = num1 + num2;
             System.out.println("Resultado de la suma es: " + resultado);
 
-             resultado = num1 - num2;
+            resultado = num1 - num2;
             System.out.println("Resultado de la resta es: " + resultado);
 
+            // Multiplicación
+
+            // División
             double num1double, num2double, resultadoDouble;
             System.out.print("Ingrese numero 1: ");
             num1double = scanner.nextDouble();
+            
             System.out.print("Ingrese numero 2: ");
             num2double = scanner.nextDouble();
 
@@ -33,10 +37,6 @@ import java.util.Scanner;
             resultadoDouble = num1double%num2double;
             System.out.println("El resto de la division es: " + resultadoDouble);
 
-
-
-
-            
+            scanner.close();
         }
-
     }

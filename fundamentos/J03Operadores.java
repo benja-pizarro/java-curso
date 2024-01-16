@@ -1,3 +1,4 @@
+package fundamentos;
 
 /*
     Operadores matemáticos
