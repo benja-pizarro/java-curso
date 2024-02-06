@@ -13,21 +13,32 @@ import java.util.Scanner;
 */
 public class T05ObtenerPromedio {
     public static void main(String[] args) {
-        
         double[] nota = new double[7];
         int indice = 0;
-        double resultadoSuma;
+        double resultadoSuma = 0;
         double promedio;
-        Scanner Scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        while(indice < nota.length){
+        //Versión revisada
+        while (indice < nota.length) {
             System.out.print("Ingrese una nota: ");
-            nota[indice] = Scanner.nextDouble();
+            nota[indice] = sc.nextDouble();
+            resultadoSuma += nota[indice];
             indice++;
         }
-        resultadoSuma = nota[0] + nota[1] + nota[2] + nota[3] + nota[4] + nota[5] + nota[6];
-        promedio = resultadoSuma/nota.length;
-        System.out.print("resultado del promedio:" + promedio);
 
-        }
+        System.out.println("El promedio es:" + (resultadoSuma/nota.length));
+
+        // Versión Benjamín
+        // while(indice < nota.length){
+        //     System.out.print("Ingrese una nota: ");
+        //     nota[indice] = Scanner.nextDouble();
+        //     indice++;
+        // }
+        // resultadoSuma = nota[0] + nota[1] + nota[2] + nota[3] + nota[4] + nota[5] + nota[6];
+        // promedio = resultadoSuma/nota.length;
+        // System.out.print("resultado del promedio:" + promedio);
+
+        sc.close();
     }
+}
